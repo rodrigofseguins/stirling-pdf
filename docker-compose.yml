@@ -13,3 +13,8 @@ services:
       - DOCKER_ENABLE_SECURITY=false
       - INSTALL_BOOK_AND_ADVANCED_HTML_OPS=false
       - LANGS=pt_BR    # change this to your preferred language code
+        networks:
+      - pinet #Pra casa pinet-internal
+networks:
+  pinet:
+    external: true
